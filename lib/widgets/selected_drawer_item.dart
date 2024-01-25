@@ -22,8 +22,7 @@ class SelectedDrawerItem extends StatelessWidget {
         style: AppStyles.styleBold16,
       ),
       trailing: Container(
-        height: 50,
-        width: 2,
+        width: 3.27,
         color: const Color(0xff4EB7F2),
       ),
     );
