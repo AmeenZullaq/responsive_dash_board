@@ -23,17 +23,11 @@ class DashBoardDesctopLayout extends StatelessWidget {
               padding: EdgeInsets.all(20),
               child: Column(
                 children: [
-                  Expanded(
-                    flex: 2,
-                    child: AllExpensses(),
-                  ),
+                  AllExpensses(),
                   SizedBox(
-                    height: 15,
+                    height: 24,
                   ),
-                  Expanded(
-                    flex: 1,
-                    child: QuickInvoice(),
-                  ),
+                  QuickInvoice(),
                 ],
               ),
             ),
