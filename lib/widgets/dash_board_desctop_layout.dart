@@ -20,14 +20,20 @@ class DashBoardDesctopLayout extends StatelessWidget {
           Expanded(
             flex: 3,
             child: Padding(
-              padding: EdgeInsets.all(20),
-              child: Column(
-                children: [
-                  AllExpensses(),
-                  SizedBox(
-                    height: 24,
+              padding: EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+              child: CustomScrollView(
+                slivers: [
+                  SliverToBoxAdapter(
+                    child: Column(
+                      children: [
+                        AllExpensses(),
+                        SizedBox(
+                          height: 24,
+                        ),
+                        QuickInvoice(),
+                      ],
+                    ),
                   ),
-                  QuickInvoice(),
                 ],
               ),
             ),
